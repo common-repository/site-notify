@@ -1,0 +1,72 @@
+/* For mobile version CSS start */
+@media screen and (max-width: 479px) {
+    body.settings_page_siteNotify .sn-main .sn_tabs ul li{
+        padding: 10px 0;
+    }    
+    body.settings_page_siteNotify .sn-tbl select,
+    body.settings_page_siteNotify .sn-tbl input[type="text"],
+    body.settings_page_siteNotify .sn-tbl input[type="number"],
+    body.settings_page_siteNotify .sn-tbl textarea{
+        width: 100%;
+    }
+    body.settings_page_siteNotify .form-data form{
+        min-height: unset;
+    }
+}
+/* For mobile version CSS end */
+
+/* For mobile landscape version CSS start */
+@media screen and (max-width: 767px){
+    body.settings_page_siteNotify .sn-main {
+        margin-right: 10px;
+    }
+    body.settings_page_siteNotify .sn-main .sn_tabs ul.right_tabs{
+        width: 50%;
+    }
+    body.settings_page_siteNotify .sn-main .sn_tabs ul.lft_tabs {
+        width: 50%;
+    }
+    body.settings_page_siteNotify .sn-main .sn_tabs ul li{
+        width: 100%!important;
+        padding: 12px 0;
+    }
+    body.settings_page_siteNotify .sn-main .sn_tabs ul.lft_tabs li:first-child{
+        margin-left: 0;
+    }
+    body.settings_page_siteNotify .overview_samples{
+        float: unset;
+        width: 100%;
+    }
+    body.settings_page_siteNotify .form-data{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    body.settings_page_siteNotify .sn-main .sn-welcome:before{
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 90px;
+    }
+    body.settings_page_siteNotify .sn-main .sn-welcome{
+        align-items: end;
+    }
+    body.settings_page_siteNotify .sn-main .sn-welcome h1{
+        font-size: 20px;
+    }
+}
+/* For mobile landscape version CSS end */
+
+/* For tablet version CSS start */
+@media screen and (min-width: 768px) and (max-width: 991px){
+    body.settings_page_siteNotify .sn-main .sn_tabs ul li{
+        padding: 12px 0px;
+        width: 82px;
+    }
+}
+@media screen and (min-width: 991px) and (max-width: 1366px){
+    body.settings_page_siteNotify .sn-main .sn_tabs ul li{
+        padding: 12px 0px;
+        width: 88px;
+    }
+}
+/* For tablet version CSS end */

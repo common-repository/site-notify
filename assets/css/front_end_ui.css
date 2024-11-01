@@ -1,0 +1,121 @@
+
+/* Pre-define template Success CSS start */
+.sn_main_fe_ui.sn_type_Success{
+    background-color: #dff0d8;
+}
+.sn_main_fe_ui.sn_type_Success span{
+    color: #dff0d8;
+    background-color: #3c763d;
+}
+.sn_main_fe_ui.sn_type_Success .notify_inner .tmp_clr{
+    color: #3c763d;
+}
+/* Pre-define template Success CSS end */
+
+/* Pre-define template Warning CSS start */
+.sn_main_fe_ui.sn_type_Warning{
+    background-color: #fcf8e3;
+}
+.sn_main_fe_ui.sn_type_Warning span{
+    color: #fcf8e3;
+    background-color: #8a6d3b;
+}
+.sn_main_fe_ui.sn_type_Warning .notify_inner .tmp_clr{
+    color: #8a6d3b;
+}
+/* Pre-define template Warning CSS end */
+
+/* Pre-define template Info CSS start */
+.sn_main_fe_ui.sn_type_Info{
+    background-color: #d9edf7;
+}
+.sn_main_fe_ui.sn_type_Info span{
+    color: #d9edf7;
+    background-color: #31708f;
+}
+.sn_main_fe_ui.sn_type_Info .notify_inner .tmp_clr{
+    color: #31708f;
+}
+/* Pre-define template Info CSS end */
+
+/* Pre-define template Danger CSS start */
+.sn_main_fe_ui.sn_type_Danger{
+    background-color: #f2dede;
+}
+.sn_main_fe_ui.sn_type_Danger span{
+    color: #f2dede;
+    background-color: #a94442;
+}
+.sn_main_fe_ui.sn_type_Danger .notify_inner .tmp_clr{
+    color: #a94442;
+}
+/* Pre-define template Danger CSS end */
+
+/* Pre-define template Simple CSS start */
+.sn_main_fe_ui.sn_type_Simple{
+    background-color: #fff;
+}
+.sn_main_fe_ui.sn_type_Simple span{
+    color: #fff;
+    background-color: #000;
+}
+.sn_main_fe_ui.sn_type_Simple .notify_inner .tmp_clr{
+    color: #000;
+}
+/* Pre-define template Simple CSS end */
+
+
+/* Plugin outer wraper CSS start */
+.activated_sn_plugin .sn_main_fe_ui{
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.activated_sn_plugin .sn_main_fe_ui span.close_box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 18px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.activated_sn_plugin .sn_main_fe_ui a{
+    color: unset;
+    text-decoration: none;
+}
+.activated_sn_plugin .sn_main_ui_wrap.sn_popup .sn_main_fe_ui{
+    margin: auto;
+    width: 50%;
+}
+.activated_sn_plugin{
+    position: relative;
+}
+/* Plugin outer wraper CSS end */
+
+/* Popup type CSS start */
+.activated_sn_plugin .sn_main_ui_wrap.sn_fixed{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.activated_sn_plugin .sn_main_ui_wrap.sn_popup{
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+}
+/* Popup type CSS end */
+
+
+/* Responsive start */
+@media screen and (max-width: 1199px){
+    .activated_sn_plugin .sn_main_ui_wrap.sn_popup .sn_main_fe_ui{
+        width: 90%;
+    }
+}
+/* Responsive end */

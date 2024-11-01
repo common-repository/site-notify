@@ -1,0 +1,278 @@
+/**
+
+* Plugin Name: Site Notify
+
+* Description: Display custom notifications, announcements, and alerts on your website
+
+* Author: krishnadhakad, sherdil2015
+
+* Author URI:  https://gaurish.com/site_notify_plugin
+
+* Version: 1.0
+
+* License: GPLv3 or later
+
+*/
+
+/* Header tabing CSS start */
+body.settings_page_siteNotify .sn-main .sn_tabs ul.lft_tabs {
+    display: inline-block;
+    width: 60%;
+    float: left;
+}
+body.settings_page_siteNotify .sn-main .sn_tabs ul.lft_tabs li:first-child {
+    margin-left: 15px;
+}
+body.settings_page_siteNotify .sn-main .sn_tabs ul.right_tabs li:last-child {
+    margin-right: 15px;
+}
+body.settings_page_siteNotify .sn-main .sn_tabs ul.right_tabs {
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+}
+body.settings_page_siteNotify .sn-main .sn_tabs ul li {
+    display: inline-block;
+    padding: 12px 15px;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+}
+body.settings_page_siteNotify .sn-main .sn_tabs {
+    background-color: #fff;
+    padding: 5px 0;
+    margin: 15px 0;
+    display: inline-block;
+    width: 100%;
+}
+body.settings_page_siteNotify .sn-main .sn_tabs ul li.current {
+    border-bottom: 3px solid #2271b1;
+    border-radius: 25px;
+    font-weight: 500;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+body.settings_page_siteNotify .sn-main .sn_tabs ul li.current a {
+    color: #2271b1 !important;
+}
+body.settings_page_siteNotify .sn-main .sn_tabs ul li a:focus {
+    box-shadow: none;
+}
+body.settings_page_siteNotify .sn-main .sn_tabs ul li a {
+    color: #000;
+    text-decoration: none;
+}
+body.settings_page_siteNotify .sn_tabs li {
+    position: relative;
+}
+body.settings_page_siteNotify .lft_tabs li.current:before,
+body.settings_page_siteNotify .right_tabs li.current:before {
+    content: '';
+    background-color: #2271b1;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: -12px;
+    border-radius: 50%;
+    left: 47%;
+}
+/* Header tabing CSS end */
+
+
+/* After submit msg CSS start */
+body.settings_page_siteNotify table.submit .aftr_submit {
+    display: inline-block;
+}
+
+body.settings_page_siteNotify table.submit .aftr_submit .updtd_txt {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    padding: 7px 15px;
+    font-size: 16px;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+body.settings_page_siteNotify table.submit .aftr_submit .error_txt {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    padding: 7px 15px;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: 700;
+}
+/* After submit msg CSS end */
+
+
+/* Welcome banner CSS start */
+body.settings_page_siteNotify .sn-main .sn-welcome {
+    text-align: center;
+    min-height: 150px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+
+body.settings_page_siteNotify .sn-main .sn-welcome:before {
+    content: '';
+    background-image: url(../images/notify_banner.png);
+    position: absolute;
+    width: 130px;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 20px;
+    top: 10px;
+    background-size: 100%;
+}
+
+body.settings_page_siteNotify .sn-main .sn-welcome h1 {
+    width: 100%;
+    font-size: 32px;
+}
+body.settings_page_siteNotify .sn-main {
+    margin-right: 20px;
+}
+/* Welcome banner CSS end */
+
+
+/* Options CSS start */
+body.settings_page_siteNotify .sn-tbl select:focus {
+    transform: unset !important;
+}
+
+body.settings_page_siteNotify .sn-tbl select,
+body.settings_page_siteNotify .sn-tbl input[type="text"],
+body.settings_page_siteNotify .sn-tbl input[type="number"],
+body.settings_page_siteNotify .sn-tbl textarea {
+    width: 65%;
+    max-width: 100%;
+    padding: 8px 15px;
+    border: none;
+    border-bottom: 2px solid #2271b1;
+    border-radius: 25px;
+    transition: transform .5s;
+}
+
+body.settings_page_siteNotify .sn-tbl select:focus,
+body.settings_page_siteNotify .sn-tbl input[type="text"]:focus,
+body.settings_page_siteNotify .sn-tbl input[type="number"]:focus,
+body.settings_page_siteNotify .sn-tbl textarea:focus {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+body.settings_page_siteNotify .sn-tbl select option {
+    padding: 15px 0;
+}
+
+body.settings_page_siteNotify .sn-tbl input[type="color"] {
+    width: 65%;
+    padding: 0;
+}
+
+body.settings_page_siteNotify .sn-tbl tr.space input {
+    width: 80px;
+}
+
+body.settings_page_siteNotify textarea.wp_custom_editor.wp-editor-area {
+    color: #000;
+}
+
+body.settings_page_siteNotify table.submit td {
+    position: relative;
+}
+
+body.settings_page_siteNotify table.submit td img {
+    width: 50px;
+    position: absolute;
+    bottom: 5px;
+}
+body.settings_page_siteNotify output#range_weight_disp {
+    background-color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #2271b1;
+}
+/* Options CSS end */
+
+
+/* Plugin overview CSS start */
+body.settings_page_siteNotify .overview_samples {
+    width: 49%;
+    height: 880px;
+    display: inline-block;
+    background-color: #fff;
+    overflow-y: scroll;
+    float: right;
+}
+
+body.settings_page_siteNotify .overview_samples .overview_inner {
+    padding: 15px 20px;
+}
+body.settings_page_siteNotify .overview_samples .overview_inner .desc b{
+    font-size: 20px;
+}
+body.settings_page_siteNotify .overview_samples .overview_inner .desc ul li{
+    font-size: 18px;
+    line-height: 28px;
+}
+body.settings_page_siteNotify .overview_samples h1 {
+    margin-top: 30px;
+}
+
+body.settings_page_siteNotify .overview_samples .overview_sec p {
+    font-size: 18px;
+    line-height: 28px;
+}
+body.settings_page_siteNotify .overview_samples .samples_sec .samples ul li img {
+    width: 100%;
+}
+/* Plugin overview CSS end */
+
+
+/* Plugin settings wraper CSS start */
+body.settings_page_siteNotify .sn_tabs,
+body.settings_page_siteNotify .form-data form,
+body.settings_page_siteNotify .overview_samples {
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+body.settings_page_siteNotify .form-data {
+    display: inline-block;
+    width: 49%;
+    float: left;
+}
+
+body.settings_page_siteNotify .form-data form {
+    background-color: #fff;
+    padding: 15px 20px;
+    min-height: 850px;
+}
+
+body.settings_page_siteNotify .form-data form .common h1 {
+    margin-top: 30px;
+    font-size: 24px;
+}
+body.settings_page_siteNotify #sn-advance-tab tr td span {
+    margin-top: 10px;
+    display: inline-block;
+}
+body.settings_page_siteNotify .form-table tr.none.hidden {
+    display: none;
+}
+
+body.settings_page_siteNotify .form-table .sn_samples img {
+    display: none;
+    max-width: 550px;
+    width: 100%;
+}
+/* Plugin settings wraper CSS end */
+
+
+/* Popup OR Toggle setting CSS start */
+body.settings_page_siteNotify .sn-main tr.sn_popup span {
+    display: inline-block;
+    margin-top: 10px;
+}
+/* Popup OR Toggle setting CSS end */
